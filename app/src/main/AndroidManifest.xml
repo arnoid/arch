@@ -1,0 +1,39 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.arnoid.archapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".WeatherApplication">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.step1.ActivityStep1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.step2.ActivityStep2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.step3.ActivityStep3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.step4.ActivityStep4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.step5.ActivityStep5"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+</manifest>
